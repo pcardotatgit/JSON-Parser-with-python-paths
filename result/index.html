@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>Visual JSON Parser</title>
+    <link rel="StyleSheet" href="dtree.css" type="text/css" />
+    <script type="text/javascript" src="dtree.js"></script>
+</head>
+<body>
+<h1>Visual JSON Browser with key Python paths</h1>
+<div class="dtree">
+    <p><a href="javascript: d.openAll();">open all</a> | <a href="javascript: d.closeAll();">close all</a></p>
+    <script type="text/javascript">
+        <!--
+        d = new dTree('d');
+        d.add(0,-1,'JSON Tree');        
+        d.add(1,0,'<span style="color:black;font-weight:bolder">quiz</span> |---------------> quiz ','');
+        d.add(2,1,'<span style="color:black;font-weight:bolder">sport</span> |---------------> quiz.sport ','');
+        d.add(3,2,'<span style="color:black;font-weight:bolder">q1</span> |---------------> quiz.sport.q1 ','');
+        d.add(4,3,'<span style="color:green;font-weight:bolder">question</span> = <span style="color:blue;font-weight:bolder">Which one is correct team name in NBA?</span>  |---------------> ["quiz"]["sport"]["q1"]["question"] ','link.html');
+        d.add(5,3,'<span style="color:black;font-weight:bolder">options</span> |---------------> quiz.sport.q1.options ','');
+        d.add(6,5,'<span style="color:green;font-weight:bolder">item0</span> = <span style="color:blue;font-weight:bolder">New York Bulls</span>  |---------------> ["quiz"]["sport"]["q1"]["options"][0] ','link.html');
+        d.add(7,5,'<span style="color:green;font-weight:bolder">item1</span> = <span style="color:blue;font-weight:bolder">Los Angeles Kings</span>  |---------------> ["quiz"]["sport"]["q1"]["options"][1] ','link.html');
+        d.add(8,5,'<span style="color:green;font-weight:bolder">item2</span> = <span style="color:blue;font-weight:bolder">Golden State Warriros</span>  |---------------> ["quiz"]["sport"]["q1"]["options"][2] ','link.html');
+        d.add(9,5,'<span style="color:green;font-weight:bolder">item3</span> = <span style="color:blue;font-weight:bolder">Huston Rocket</span>  |---------------> ["quiz"]["sport"]["q1"]["options"][3] ','link.html');
+        d.add(10,3,'<span style="color:green;font-weight:bolder">answer</span> = <span style="color:blue;font-weight:bolder">Huston Rocket</span>  |---------------> ["quiz"]["sport"]["q1"]["answer"] ','link.html');
+        d.add(11,1,'<span style="color:black;font-weight:bolder">maths</span> |---------------> quiz.maths ','');
+        d.add(12,11,'<span style="color:black;font-weight:bolder">q1</span> |---------------> quiz.maths.q1 ','');
+        d.add(13,12,'<span style="color:green;font-weight:bolder">question</span> = <span style="color:blue;font-weight:bolder">5 + 7 = ?</span>  |---------------> ["quiz"]["maths"]["q1"]["question"] ','link.html');
+        d.add(14,12,'<span style="color:black;font-weight:bolder">options</span> |---------------> quiz.maths.q1.options ','');
+        d.add(15,14,'<span style="color:green;font-weight:bolder">item0</span> = <span style="color:blue;font-weight:bolder">10</span>  |---------------> ["quiz"]["maths"]["q1"]["options"][0] ','link.html');
+        d.add(16,14,'<span style="color:green;font-weight:bolder">item1</span> = <span style="color:blue;font-weight:bolder">11</span>  |---------------> ["quiz"]["maths"]["q1"]["options"][1] ','link.html');
+        d.add(17,14,'<span style="color:green;font-weight:bolder">item2</span> = <span style="color:blue;font-weight:bolder">12</span>  |---------------> ["quiz"]["maths"]["q1"]["options"][2] ','link.html');
+        d.add(18,14,'<span style="color:green;font-weight:bolder">item3</span> = <span style="color:blue;font-weight:bolder">13</span>  |---------------> ["quiz"]["maths"]["q1"]["options"][3] ','link.html');
+        d.add(19,12,'<span style="color:green;font-weight:bolder">answer</span> = <span style="color:blue;font-weight:bolder">12</span>  |---------------> ["quiz"]["maths"]["q1"]["answer"] ','link.html');
+        d.add(20,11,'<span style="color:black;font-weight:bolder">q2</span> |---------------> quiz.maths.q2 ','');
+        d.add(21,20,'<span style="color:green;font-weight:bolder">question</span> = <span style="color:blue;font-weight:bolder">12 - 8 = ?</span>  |---------------> ["quiz"]["maths"]["q2"]["question"] ','link.html');
+        d.add(22,20,'<span style="color:black;font-weight:bolder">options</span> |---------------> quiz.maths.q2.options ','');
+        d.add(23,22,'<span style="color:green;font-weight:bolder">item0</span> = <span style="color:blue;font-weight:bolder">1</span>  |---------------> ["quiz"]["maths"]["q2"]["options"][0] ','link.html');
+        d.add(24,22,'<span style="color:green;font-weight:bolder">item1</span> = <span style="color:blue;font-weight:bolder">2</span>  |---------------> ["quiz"]["maths"]["q2"]["options"][1] ','link.html');
+        d.add(25,22,'<span style="color:green;font-weight:bolder">item2</span> = <span style="color:blue;font-weight:bolder">3</span>  |---------------> ["quiz"]["maths"]["q2"]["options"][2] ','link.html');
+        d.add(26,22,'<span style="color:green;font-weight:bolder">item3</span> = <span style="color:blue;font-weight:bolder">4</span>  |---------------> ["quiz"]["maths"]["q2"]["options"][3] ','link.html');
+        d.add(27,20,'<span style="color:green;font-weight:bolder">answer</span> = <span style="color:blue;font-weight:bolder">4</span>  |---------------> ["quiz"]["maths"]["q2"]["answer"] ','link.html');
+
+        document.write(d);
+        //-->
+    </script>
+</div>
+</body>
+</html>
+    
